@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E47024D-F2CC-4BF6-A7C4-03AA5ED34E84}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyNhanSu</RootNamespace>
+    <AssemblyName>QuanLyNhanSu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormBangLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBangLuong.Designer.cs">
+      <DependentUpon>FormBangLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChucNang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChucNang.Designer.cs">
+      <DependentUpon>FormChucNang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDanhMuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDanhMuc.Designer.cs">
+      <DependentUpon>FormDanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDoiPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoiPassword.Designer.cs">
+      <DependentUpon>FormDoiPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHoSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHoSo.Designer.cs">
+      <DependentUpon>FormHoSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPhanCa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhanCa.Designer.cs">
+      <DependentUpon>FormPhanCa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChamCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChamCong.Designer.cs">
+      <DependentUpon>FormChamCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNhanSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNhanSu.Designer.cs">
+      <DependentUpon>FormNhanSu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThietLap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThietLap.Designer.cs">
+      <DependentUpon>FormThietLap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTroGiup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTroGiup.Designer.cs">
+      <DependentUpon>FormTroGiup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormBangLuong.resx">
+      <DependentUpon>FormBangLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChucNang.resx">
+      <DependentUpon>FormChucNang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDanhMuc.resx">
+      <DependentUpon>FormDanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoiPassword.resx">
+      <DependentUpon>FormDoiPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHoSo.resx">
+      <DependentUpon>FormHoSo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNhanSu.resx">
+      <DependentUpon>FormNhanSu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThietLap.resx">
+      <DependentUpon>FormThietLap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChamCong.resx">
+      <DependentUpon>FormChamCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTroGiup.resx">
+      <DependentUpon>FormTroGiup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\data-science.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\folders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\stationery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\consultant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\payroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\analysis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\protection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\check-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\team.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\decentralized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\transaction-history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\data-scientist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\sync.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\desktop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\user_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\schedule_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\pin_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\down_arrow_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\virus_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\log in_logout_session_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\cross_delete_remove_cancel_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\computer_password_privacy_protection_security_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\letter-i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\cogwheel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\id.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\attendance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\salary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\diskette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\down-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\google-docs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\printer %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\xls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\aab80c60ee75a502f05d86a3e6ec7456.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ĐỒ ÁN PHÂN TÍCH  THIẾT KẾ HỆ THỐNG THÔNG TIN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Capture.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
